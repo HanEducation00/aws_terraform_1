@@ -1,13 +1,15 @@
-# Terraform lock file
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
 .terraform.lock.hcl
 
-# Terraform directories
-.terraform/
+# Terraform variables file
+*.tfvars
 
-# State files
-terraform.tfstate
-terraform.tfstate.*
+# Ignore local Terraform plan files
+*.tfplan
 
-# Specific paths (optional if above patterns work as expected)
-devops-terraform/01_JenkinsServer/terraform.tfstate
-devops-terraform/02_MontitoringServer/terraform.tfstate
+# Ignore provider binaries
+.terraform/providers/
+
