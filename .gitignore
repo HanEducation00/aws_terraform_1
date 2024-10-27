@@ -1,10 +1,13 @@
+# Terraform lock file
 .terraform.lock.hcl
-/.terraform.lock.hcl
 
-.terraform
-/.terraform
+# Terraform directories
+.terraform/
 
-/terraform.tfstate
+# State files
+terraform.tfstate
+terraform.tfstate.*
 
-/home/han/aws_terraform/devops-terraform/01_JenkinsServer/terraform.tfstate
-/home/han/aws_terraform/devops-terraform/02_MontitoringServer/terraform.tfstate
+# Specific paths (optional if above patterns work as expected)
+devops-terraform/01_JenkinsServer/terraform.tfstate
+devops-terraform/02_MontitoringServer/terraform.tfstate
